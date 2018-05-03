@@ -9,7 +9,7 @@
 <h2>Sekundárna navigácia</h2>
 {% for nav in site.data.nav_footer %}<a href="{{ nav.url | relative_url }}"{% if nav.url == page.url %} class="active"{% endif %}>{{ nav.title }}</a>{% endfor %}
 </nav>
-<span>Gastro&nbsp;House &copy;&nbsp;{{ site.time | date: '%Y' }}</span>
+<span>{{ site.title }} &copy;&nbsp;{{ site.time | date: '%Y' }}</span>
 </div>
 </footer>
 

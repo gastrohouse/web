@@ -1,0 +1,73 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: permalink
+  label: Permalink
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: menu
+  label: Menu
+  type: field_group_list
+  fields:
+  - name: day
+    label: Day
+    type: text
+    hidden: false
+    default: ''
+  - name: food
+    label: Food
+    type: field_group_list
+    fields:
+    - name: title
+      label: Title
+      type: text
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: intro
+  label: Intro
+  type: field_group
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: perex
+    label: Perex
+    type: text
+    hidden: false
+    default: ''
+  - name: button
+    label: Button
+    type: field_group
+    fields:
+    - name: title
+      label: Title
+      type: text
+      hidden: false
+      default: ''
+    - name: url
+      label: Url
+      type: text
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  - name: image
+    label: Image
+    type: file
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''

@@ -1,8 +1,5 @@
+---
 - title: O nás
-  url: /o-nas/
-
-- title: Tím
-  url: /tim/
-
+  url: "/o-nas/"
 - title: Kontakt
-  url: /kontakt/
+  url: "/kontakt/"

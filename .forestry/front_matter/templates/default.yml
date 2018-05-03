@@ -1,4 +1,6 @@
 ---
+pages:
+- _pages/jedalny-listok.html
 hide_body: false
 is_partial: false
 fields:

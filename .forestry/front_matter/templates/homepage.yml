@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - name: permalink
@@ -30,6 +30,25 @@ fields:
       type: text
       hidden: false
       default: ''
+    - type: select
+      name: mark
+      config:
+        source:
+          type: simple
+        options:
+        - A
+        - B
+        - C
+        - D
+        - E
+        - F
+      label: Mark
+    - type: number
+      name: price
+      label: Price
+      config:
+        min: '0'
+        step: '0.01'
     hidden: false
     default: ''
   hidden: false

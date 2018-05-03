@@ -1,4 +1,6 @@
 ---
+pages:
+- _pages/home.html
 hide_body: true
 is_partial: false
 fields:

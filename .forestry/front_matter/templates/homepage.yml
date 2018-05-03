@@ -45,12 +45,9 @@ fields:
         - E
         - F
       label: Mark
-    - type: number
+    - type: text
       name: price
       label: Price
-      config:
-        min: '0'
-        step: '0.01'
     hidden: false
     default: ''
   hidden: false

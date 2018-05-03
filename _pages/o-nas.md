@@ -7,4 +7,4 @@ Páni a dámy, milí naši hladoši, menučkári, stravníci! Ak máte chuť na 
 
 Objednať si môžete u nás aj chlebíčky na rôzne slávnostné udalosti. Ponúkame Vám aj rozvoz obedov priamo do firiem.
 
-Podmienky dohodnete na telefónnom čísle 0903 213 583.
+Podmienky dohodnete na telefónnom čísle 0903 213 583

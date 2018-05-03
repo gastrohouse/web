@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sk-SK">
+<head>
+{% include head_meta.html %}
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&#038;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/style.css?20180503' | relative_url }}">
+</head>
+<body class="{{ page.layout }}">
+
+<h1>{{ site.title }}</h1>
+
+<div class="header-ghost"></div>
+<header>
+<a href="{{ '/' | relative_url }}" class="logo"><img src="{{ '/assets/logo.svg' | relative_url }}" alt="logo"></a>
+<a href="#main-menu" class="hamburger"><span></span></a>
+
+<div class="offsite" id="main-menu">
+
+<nav>
+<h2>Hlavná navigácia</h2>
+{% for nav in site.data.nav_main %}<a href="{{ nav.url | relative_url }}"{% if nav.url == page.url %} class="active"{% endif %}>{{ nav.title }}</a>{% endfor %}
+</nav>
+
+<a href="{{ '/' | relative_url }}" class="logo"><img src="{{ '/assets/logo.svg' | relative_url }}" alt="logo"></a>
+
+<nav>
+<h2>Jedlo</h2>
+{% for nav in site.data.nav_secondary %}<a href="{{ nav.url | relative_url }}"{% if nav.url == page.url %} class="active"{% endif %}>{{ nav.title }}</a>{% endfor %}
+</nav>
+
+</div>
+
+<a href="#" class="shield" tabindex="-1"></a>
+
+</header>

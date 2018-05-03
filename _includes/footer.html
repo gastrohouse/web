@@ -1,0 +1,17 @@
+<section class="mapa">
+<h2>Mapa</h2>
+<iframe width="600" height="360" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUrUQpV6kydybh7IdNaWM5YktNAMd9t9s&q=OD+Slimák&language=sk-SK" allowfullscreen></iframe>
+</section>
+
+<footer>
+<div>
+<nav>
+<h2>Sekundárna navigácia</h2>
+{% for nav in site.data.nav_footer %}<a href="{{ nav.url | relative_url }}"{% if nav.url == page.url %} class="active"{% endif %}>{{ nav.title }}</a>{% endfor %}
+</nav>
+<span>Gastro&nbsp;House &copy;&nbsp;{{ site.time | date: '%Y' }}</span>
+</div>
+</footer>
+
+</body>
+</html>

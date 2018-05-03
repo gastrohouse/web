@@ -1,0 +1,35 @@
+{% include header.html %}
+
+{% if page.intro %}
+<section class="intro">
+<div>
+<div>
+<h2>{{ page.intro.title }}</h2>
+<p>{{ page.intro.perex }}</p>
+{% if page.intro.button %}<a href="{{ page.intro.button.url }}">{{ page.intro.button.title }}</a>{% endif %}
+</div>
+</div>
+<img src="{{ page.intro.image | default: '/assets/intro.jpg' | relative_url }}" alt="">
+</section>
+{% endif %}
+
+{% if page.menu %}
+<a id="denne-menu" class="anchor"></a>
+<section class="denne-menu">
+<div><h2>Denné menu</h2><img src="{{ '/assets/tanier.jpg' | relative_url }}" alt=""></div>
+<div>
+{% for item in page.menu %}
+<section>
+<h2>{{ item.day }}</h2>
+<ul>
+{% for food in item.food %}
+<li>{% if food.mark %}<div>{{ food.mark }}</div>{% endif %}<h3>{{ food.title }}</h3>{% if food.price %}<div>{{ food.price }}&nbsp;&euro;</div>{% endif %}</li>
+{% endfor %}
+</ul>
+</section>
+{% endfor %}
+</div>
+</section>
+{% endif %}
+
+{% include footer.html %}

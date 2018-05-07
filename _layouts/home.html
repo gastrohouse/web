@@ -6,7 +6,7 @@
 <div>
 <h2>{{ page.intro.title }}</h2>
 <p>{{ page.intro.perex }}</p>
-{% if page.intro.button %}<a href="{{ page.intro.button.url }}">{{ page.intro.button.title }}</a>{% endif %}
+{% if page.intro.button.title != "" %}<a href="{{ page.intro.button.url }}">{{ page.intro.button.title }}</a>{% endif %}
 </div>
 </div>
 <img src="{{ page.intro.image | default: '/assets/intro.jpg' | relative_url }}" alt="">

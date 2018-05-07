@@ -4,7 +4,7 @@
 
 if($_SERVER['REQUEST_METHOD']!='POST') { exit('nothing to show'); }
 
-$dir=getcwd().'/';
+$dir=getcwd().'/../../';
 $filename='emails.csv';
 $filepath=$dir.$filename;
 
@@ -21,15 +21,6 @@ flock($file,LOCK_EX);
 fputcsv($file,$data);
 flock($file,LOCK_UN);
 fclose($file);
-
-mail(
-	'zabatonni@gmail.com',
-	'Napiste nam',
-	json_encode($data),
-	array(
-		'From'=>'admin@gastrohouse.sk',
-	)
-);
 
 header('Location: https://gastrohouse.sk/sent/');
 exit;

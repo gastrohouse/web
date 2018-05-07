@@ -89,3 +89,13 @@ fields:
     default: ''
   hidden: false
   default: ''
+- type: field_group
+  name: nazor
+  label: Nazor
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: cta
+    label: Button

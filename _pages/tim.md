@@ -1,5 +1,5 @@
 ---
 title: Tím
 layout: page
-permalink: /tim/
+permalink: "/tim/"
 ---

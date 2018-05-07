@@ -1,6 +1,5 @@
 ---
 - title: Jedálny lístok
-  url: /jedalny-listok/
+  url: "/jedalny-listok/"
 - title: Denné menu
-  url: /#denne-menu
----
+  url: "/#denne-menu"

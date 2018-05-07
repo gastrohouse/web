@@ -32,4 +32,11 @@
 </section>
 {% endif %}
 
+{% if page.nazor.title != '' %}
+<section class="nazor">
+<h2>{{ page.nazor.title }}</h2>
+<a href="{{ '/kontakt/' | relative_url }}">{{ page.nazor.cta }}</a>
+</section>
+{% endif %}
+
 {% include footer.html %}

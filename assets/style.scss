@@ -177,6 +177,16 @@ header .logo{width:100%;justify-content:center;}
 .columns-2 > *{flex:1 1 calc(50% - 2rem);margin:0 1rem;}
 }
 
+.nazor{background:#E6D6A3;display:flex;justify-content:center;align-items:center;padding:2rem;flex-wrap:wrap;}
+.nazor h2{font-size:1.25rem;line-height:1.3;text-align:center;}
+.nazor a{display:block;text-decoration:none;background:#332C26;color:#ffffff;padding:0.5rem 1rem;margin:1rem 2rem;border-radius:3px;font-size:1.25rem;}
+.nazor a:hover{background:#4D4239;}
+.nazor a:focus{outline:2px dashed #E6D6A3;outline-offset:-4px;}
+
+@media print {
+.nazor{display:none;}
+}
+
 .mapa{overflow:hidden;}
 .mapa > h2{display:none;}
 .mapa > iframe{display:block;border:0;width:100%;height:30rem;min-height:16rem;max-height:50vh;}

@@ -1,5 +1,6 @@
 ---
 pages:
+- _pages/o-nas.md
 - _pages/kontakt.html
 - _pages/jedalny-listok.html
 hide_body: false

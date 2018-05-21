@@ -1,6 +1,4 @@
 ---
-pages:
-- _pages/home.html
 hide_body: true
 is_partial: false
 fields:
@@ -99,3 +97,5 @@ fields:
   - type: text
     name: cta
     label: Button
+pages:
+- _pages/home.html

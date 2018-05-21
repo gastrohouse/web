@@ -1,8 +1,4 @@
 ---
-pages:
-- _pages/jedalny-listok.html
-- _pages/o-nas.md
-- _pages/kontakt.html
 hide_body: false
 is_partial: false
 fields:
@@ -21,3 +17,7 @@ fields:
   type: text
   hidden: false
   default: ''
+pages:
+- _pages/jedalny-listok.html
+- _pages/o-nas.md
+- _pages/kontakt.html

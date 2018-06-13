@@ -9,11 +9,7 @@ $filename='emails.csv';
 $filepath=$dir.$filename;
 
 $data['time']=date('c',time());
-$data['meno']=$_POST['meno'] ?? null;
-$data['email']=$_POST['email'] ?? null;
 $data['sprava']=$_POST['sprava'] ?? null;
-$data['ip']=$_SERVER['REMOTE_ADDR'];
-$data['browser']=$_SERVER['HTTP_USER_AGENT'];
 
 $file=fopen($filepath,'a+');
 

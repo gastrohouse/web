@@ -21,10 +21,8 @@ sobota, nedeľa: zatvorené</p>
 <div>
 <h3>Napíšte nám</h3>
 <form action="{{ '/send/' | absolute_url }}" method="POST" id="napiste">
-<p><label>Správa:<br><textarea name="sprava" required="required"></textarea></label></p>
+<p><textarea name="sprava" required="required"></textarea></p>
 <p><input type="submit" value="Odoslať"></p>
 </form>
 </div>
 </div>
-
-<script type="null"><br>(function() {<br>	const form=document.querySelector('form#napiste');<br><br>	if(!form) { return; }<br><br>	form.addEventListener('submit',function(e) {<br>		e.preventDefault();<br><br>		console.log(e);<br>	});<br>})();<br></script>

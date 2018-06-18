@@ -18,6 +18,6 @@ fields:
   hidden: false
   default: ''
 pages:
+- _pages/kontakt.html
 - _pages/jedalny-listok.html
 - _pages/o-nas.md
-- _pages/kontakt.html

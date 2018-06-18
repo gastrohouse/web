@@ -139,6 +139,7 @@ header .logo{width:100%;justify-content:center;}
 }
 
 @media print {
+.denne-menu{page-break-before:always;}
 .denne-menu > div img{display:none;}
 }
 

@@ -63,7 +63,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll (~> 3.8.1)
+  jekyll (~> 3.8.3)
   tzinfo-data
   wdm (~> 0.1.0)
 
